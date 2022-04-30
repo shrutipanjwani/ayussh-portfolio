@@ -7,3 +7,214 @@ body {
   margin: 0;
   font-family: "Poppins", sans-serif;
 }
+
+.container {
+  width: 1280px;
+  min-width: 1280px;
+  margin: 0 auto;
+
+  .wrapper {
+    padding: 0 48px;
+    .home {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      p {
+        font-size: 0.75rem;
+        letter-spacing: 0.3rem;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+      h5 {
+        margin-top: 260px;
+        font-size: 24px;
+        font-weight: 600;
+        padding-right: 360px;
+      }
+    }
+  }
+}
+
+header {
+  height: 100px;
+  .inner-header {
+    position: relative;
+    z-index: 10;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo a {
+      font-weight: 700;
+      font-size: 1rem;
+      text-decoration: none;
+      color: $black;
+    }
+    .menu {
+      button {
+        border: none;
+        background: none;
+        outline: none;
+        cursor: pointer;
+        font-size: 0.8rem;
+        mix-blend-mode: difference;
+      }
+    }
+  }
+  .hamburger-menu {
+    display: none;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    .menu-secondary-background-color {
+      background: $black;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+    .menu-layer {
+      position: relative;
+      background: $red;
+      height: 100%;
+      overflow: hidden;
+
+      .wrapper {
+        position: relative;
+        .menu-links {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          position: relative;
+          top: 100px;
+          nav {
+            display: block;
+            ul {
+              margin: 0;
+              padding: 0;
+              li {
+                list-style: none;
+                font-size: 4.5rem;
+                font-weight: 700;
+                cursor: pointer;
+                height: 100px;
+                overflow: hidden;
+                position: relative;
+                width: 700px;
+                a {
+                  position: absolute;
+                  color: #fff;
+                  text-decoration: none;
+                  &:hover {
+                    color: $black;
+                  }
+                }
+              }
+            }
+          }
+          .info {
+            color: #fff;
+            width: 300px;
+            h3 {
+              font-size: 1.2rem;
+              margin: 8px auto;
+            }
+            p {
+              margin: 0 auto;
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+main {
+  position: relative;
+  width: 100vw;
+  min-height: 700px;
+  margin-top: 5%;
+
+  .img-center {
+    width: 250px;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .one,
+  .six {
+    width: 220px;
+    height: 400px;
+  }
+  .one {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    background-image: url("./Assets/ayussh.jpeg");
+  }
+  .two {
+    background-image: url("./Assets/ayussh.jpeg");
+  }
+  .three {
+    background-image: url("./Assets/ayussh.jpeg");
+  }
+  .four {
+    background-image: url("./Assets/ayussh.jpeg");
+  }
+  .five {
+    background-image: url("./Assets/ayussh.jpeg");
+  }
+  .six {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    background-image: url("./Assets/ayussh.jpeg");
+  }
+  .holder div {
+    margin: 10px;
+  }
+  .holder-one {
+    position: absolute;
+    top: 50%;
+    left: 230px;
+    transform: translate(0, -50%);
+  }
+  .holder-two {
+    position: absolute;
+    top: 50%;
+    right: 230px;
+    transform: translate(0, -50%);
+  }
+  .video-player {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+
+    video {
+      width: 350px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+  }
+}

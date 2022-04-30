@@ -7,6 +7,8 @@ const Footer = React.lazy(() => import("./Components/Footer"));
 const Home = React.lazy(() => import("./Pages/Home"));
 const About = React.lazy(() => import("./Pages/About"));
 const Work = React.lazy(() => import("./Pages/Work"));
+const Blog = React.lazy(() => import("./Pages/Blog"));
+const ResearchPaper = React.lazy(() => import("./Pages/ResearchPaper"));
 const Chat = React.lazy(() => import("./Pages/Chat"));
 
 function App() {
@@ -27,8 +29,10 @@ function App() {
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route path="/about" element={<About />} />
-                  <Route path="/about" element={<Work />} />
-                  <Route path="/about" element={<Chat />} />
+                  <Route path="/work" element={<Work />} />
+                  <Route path="/blog" element={<Blog />} />
+                  <Route path="/research" element={<ResearchPaper />} />
+                  <Route path="/chat" element={<Chat />} />
                 </Routes>
               </div>
             </div>
